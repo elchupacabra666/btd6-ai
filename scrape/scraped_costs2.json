@@ -1,0 +1,2222 @@
+{
+  "dart_monkey": {
+    "base_cost": {
+      "Easy": 170,
+      "Medium": 200,
+      "Hard": 215,
+      "Impoppable": 240
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 120,
+          "Medium": 140,
+          "Hard": 150,
+          "Impoppable": 170
+        },
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 270,
+          "Medium": 320,
+          "Hard": 345,
+          "Impoppable": 385
+        },
+        {
+          "Easy": 1530,
+          "Medium": 1800,
+          "Hard": 1945,
+          "Impoppable": 2160
+        },
+        {
+          "Easy": 12750,
+          "Medium": 15000,
+          "Hard": 16200,
+          "Impoppable": 18000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 85,
+          "Medium": 100,
+          "Hard": 110,
+          "Impoppable": 120
+        },
+        {
+          "Easy": 160,
+          "Medium": 190,
+          "Hard": 205,
+          "Impoppable": 230
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 6120,
+          "Medium": 7200,
+          "Hard": 7775,
+          "Impoppable": 8640
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 75,
+          "Medium": 90,
+          "Hard": 95,
+          "Impoppable": 110
+        },
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 490,
+          "Medium": 575,
+          "Hard": 620,
+          "Impoppable": 690
+        },
+        {
+          "Easy": 1740,
+          "Medium": 2050,
+          "Hard": 2215,
+          "Impoppable": 2460
+        },
+        {
+          "Easy": 18275,
+          "Medium": 21500,
+          "Hard": 23220,
+          "Impoppable": 25800
+        }
+      ]
+    }
+  },
+  "bomb_shooter": {
+    "base_cost": {
+      "Easy": 320,
+      "Medium": 375,
+      "Hard": 405,
+      "Impoppable": 450
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 550,
+          "Medium": 650,
+          "Hard": 700,
+          "Impoppable": 780
+        },
+        {
+          "Easy": 935,
+          "Medium": 1100,
+          "Hard": 1190,
+          "Impoppable": 1320
+        },
+        {
+          "Easy": 2380,
+          "Medium": 2800,
+          "Hard": 3025,
+          "Impoppable": 3360
+        },
+        {
+          "Easy": 46750,
+          "Medium": 55000,
+          "Hard": 59400,
+          "Impoppable": 66000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 850,
+          "Medium": 1000,
+          "Hard": 1080,
+          "Impoppable": 1200
+        },
+        {
+          "Easy": 2930,
+          "Medium": 3450,
+          "Hard": 3725,
+          "Impoppable": 4140
+        },
+        {
+          "Easy": 23800,
+          "Medium": 28000,
+          "Hard": 30240,
+          "Impoppable": 33600
+        }
+      ],
+      "2": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 595,
+          "Medium": 700,
+          "Hard": 755,
+          "Impoppable": 840
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 19550,
+          "Medium": 23000,
+          "Hard": 24840,
+          "Impoppable": 27600
+        }
+      ]
+    }
+  },
+  "tack_shooter": {
+    "base_cost": {
+      "Easy": 220,
+      "Medium": 260,
+      "Hard": 280,
+      "Impoppable": 310
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 2975,
+          "Medium": 3500,
+          "Hard": 3780,
+          "Impoppable": 4200
+        },
+        {
+          "Easy": 38675,
+          "Medium": 45500,
+          "Hard": 49140,
+          "Impoppable": 54600
+        }
+      ],
+      "1": [
+        {
+          "Easy": 85,
+          "Medium": 100,
+          "Hard": 110,
+          "Impoppable": 120
+        },
+        {
+          "Easy": 190,
+          "Medium": 225,
+          "Hard": 245,
+          "Impoppable": 270
+        },
+        {
+          "Easy": 465,
+          "Medium": 550,
+          "Hard": 595,
+          "Impoppable": 660
+        },
+        {
+          "Easy": 2295,
+          "Medium": 2700,
+          "Hard": 2915,
+          "Impoppable": 3240
+        },
+        {
+          "Easy": 12750,
+          "Medium": 15000,
+          "Hard": 16200,
+          "Impoppable": 18000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 95,
+          "Medium": 110,
+          "Hard": 120,
+          "Impoppable": 130
+        },
+        {
+          "Easy": 95,
+          "Medium": 110,
+          "Hard": 120,
+          "Impoppable": 130
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 2720,
+          "Medium": 3200,
+          "Hard": 3455,
+          "Impoppable": 3840
+        },
+        {
+          "Easy": 17000,
+          "Medium": 20000,
+          "Hard": 21600,
+          "Impoppable": 24000
+        }
+      ]
+    }
+  },
+  "ice_monkey": {
+    "base_cost": {
+      "Easy": 340,
+      "Medium": 400,
+      "Hard": 430,
+      "Impoppable": 480
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 1275,
+          "Medium": 1500,
+          "Hard": 1620,
+          "Impoppable": 1800
+        },
+        {
+          "Easy": 1955,
+          "Medium": 2300,
+          "Hard": 2485,
+          "Impoppable": 2760
+        },
+        {
+          "Easy": 23800,
+          "Medium": 28000,
+          "Hard": 30240,
+          "Impoppable": 33600
+        }
+      ],
+      "1": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 2335,
+          "Medium": 2750,
+          "Hard": 2970,
+          "Impoppable": 3300
+        },
+        {
+          "Easy": 3400,
+          "Medium": 4000,
+          "Hard": 4320,
+          "Impoppable": 4800
+        },
+        {
+          "Easy": 17850,
+          "Medium": 21000,
+          "Hard": 22680,
+          "Impoppable": 25200
+        }
+      ],
+      "2": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 1615,
+          "Medium": 1900,
+          "Hard": 2050,
+          "Impoppable": 2280
+        },
+        {
+          "Easy": 2335,
+          "Medium": 2750,
+          "Hard": 2970,
+          "Impoppable": 3300
+        },
+        {
+          "Easy": 25500,
+          "Medium": 30000,
+          "Hard": 32400,
+          "Impoppable": 36000
+        }
+      ]
+    }
+  },
+  "glue_gunner": {
+    "base_cost": {
+      "Easy": 190,
+      "Medium": 225,
+      "Hard": 245,
+      "Impoppable": 270
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 1700,
+          "Medium": 2000,
+          "Hard": 2160,
+          "Impoppable": 2400
+        },
+        {
+          "Easy": 4250,
+          "Medium": 5000,
+          "Hard": 5400,
+          "Impoppable": 6000
+        },
+        {
+          "Easy": 19125,
+          "Medium": 22500,
+          "Hard": 24300,
+          "Impoppable": 27000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 85,
+          "Medium": 100,
+          "Hard": 110,
+          "Impoppable": 120
+        },
+        {
+          "Easy": 825,
+          "Medium": 970,
+          "Hard": 1050,
+          "Impoppable": 1165
+        },
+        {
+          "Easy": 1655,
+          "Medium": 1950,
+          "Hard": 2105,
+          "Impoppable": 2340
+        },
+        {
+          "Easy": 3400,
+          "Medium": 4000,
+          "Hard": 4320,
+          "Impoppable": 4800
+        },
+        {
+          "Easy": 13600,
+          "Medium": 16000,
+          "Hard": 17280,
+          "Impoppable": 19200
+        }
+      ],
+      "2": [
+        {
+          "Easy": 240,
+          "Medium": 280,
+          "Hard": 300,
+          "Impoppable": 335
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 3060,
+          "Medium": 3600,
+          "Hard": 3890,
+          "Impoppable": 4320
+        },
+        {
+          "Easy": 3400,
+          "Medium": 4000,
+          "Hard": 4320,
+          "Impoppable": 4800
+        },
+        {
+          "Easy": 20400,
+          "Medium": 24000,
+          "Hard": 25920,
+          "Impoppable": 28800
+        }
+      ]
+    }
+  },
+  "sniper_monkey": {
+    "base_cost": {
+      "Easy": 185,
+      "Medium": 215,
+      "Hard": 235,
+      "Impoppable": 260
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 1105,
+          "Medium": 1300,
+          "Hard": 1405,
+          "Impoppable": 1560
+        },
+        {
+          "Easy": 1870,
+          "Medium": 2200,
+          "Hard": 2375,
+          "Impoppable": 2640
+        },
+        {
+          "Easy": 5355,
+          "Medium": 6300,
+          "Hard": 6805,
+          "Impoppable": 7560
+        },
+        {
+          "Easy": 27200,
+          "Medium": 32000,
+          "Hard": 34560,
+          "Impoppable": 38400
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 1785,
+          "Medium": 2100,
+          "Hard": 2270,
+          "Impoppable": 2520
+        },
+        {
+          "Easy": 6460,
+          "Medium": 7600,
+          "Hard": 8210,
+          "Impoppable": 9120
+        },
+        {
+          "Easy": 11900,
+          "Medium": 14000,
+          "Hard": 15120,
+          "Impoppable": 16800
+        }
+      ],
+      "2": [
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 2295,
+          "Medium": 2700,
+          "Hard": 2915,
+          "Impoppable": 3240
+        },
+        {
+          "Easy": 3485,
+          "Medium": 4100,
+          "Hard": 4430,
+          "Impoppable": 4920
+        },
+        {
+          "Easy": 12665,
+          "Medium": 14900,
+          "Hard": 16090,
+          "Impoppable": 17880
+        }
+      ]
+    }
+  },
+  "monkey_sub": {
+    "base_cost": {
+      "Easy": 170,
+      "Medium": 200,
+      "Hard": 220,
+      "Impoppable": 240
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 110,
+          "Medium": 130,
+          "Hard": 140,
+          "Impoppable": 155
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 595,
+          "Medium": 700,
+          "Hard": 755,
+          "Impoppable": 840
+        },
+        {
+          "Easy": 1955,
+          "Medium": 2300,
+          "Hard": 2485,
+          "Impoppable": 2760
+        },
+        {
+          "Easy": 26350,
+          "Medium": 31000,
+          "Hard": 33480,
+          "Impoppable": 37200
+        }
+      ],
+      "1": [
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 1145,
+          "Medium": 1350,
+          "Hard": 1460,
+          "Impoppable": 1620
+        },
+        {
+          "Easy": 11050,
+          "Medium": 13000,
+          "Hard": 14040,
+          "Impoppable": 15600
+        },
+        {
+          "Easy": 24650,
+          "Medium": 29000,
+          "Hard": 31320,
+          "Impoppable": 34800
+        }
+      ],
+      "2": [
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 850,
+          "Medium": 1000,
+          "Hard": 1080,
+          "Impoppable": 1200
+        },
+        {
+          "Easy": 935,
+          "Medium": 1100,
+          "Hard": 1190,
+          "Impoppable": 1320
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 21250,
+          "Medium": 25000,
+          "Hard": 27000,
+          "Impoppable": 30000
+        }
+      ]
+    }
+  },
+  "monkey_buccaneer": {
+    "base_cost": {
+      "Easy": 210,
+      "Medium": 250,
+      "Hard": 270,
+      "Impoppable": 300
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 235,
+          "Medium": 275,
+          "Hard": 295,
+          "Impoppable": 330
+        },
+        {
+          "Easy": 360,
+          "Medium": 425,
+          "Hard": 460,
+          "Impoppable": 510
+        },
+        {
+          "Easy": 2590,
+          "Medium": 3050,
+          "Hard": 3295,
+          "Impoppable": 3660
+        },
+        {
+          "Easy": 6800,
+          "Medium": 8000,
+          "Hard": 8640,
+          "Impoppable": 9600
+        },
+        {
+          "Easy": 20825,
+          "Medium": 24500,
+          "Hard": 26460,
+          "Impoppable": 29400
+        }
+      ],
+      "1": [
+        {
+          "Easy": 465,
+          "Medium": 550,
+          "Hard": 595,
+          "Impoppable": 660
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 3315,
+          "Medium": 3900,
+          "Hard": 4210,
+          "Impoppable": 4680
+        },
+        {
+          "Easy": 22950,
+          "Medium": 27000,
+          "Hard": 29160,
+          "Impoppable": 32400
+        }
+      ],
+      "2": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 2040,
+          "Medium": 2400,
+          "Hard": 2590,
+          "Impoppable": 2880
+        },
+        {
+          "Easy": 4675,
+          "Medium": 5500,
+          "Hard": 5940,
+          "Impoppable": 6600
+        },
+        {
+          "Easy": 19550,
+          "Medium": 23000,
+          "Hard": 24840,
+          "Impoppable": 27600
+        }
+      ]
+    }
+  },
+  "monkey_ace": {
+    "base_cost": {
+      "Easy": 420,
+      "Medium": 495,
+      "Hard": 535,
+      "Impoppable": 595
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 550,
+          "Medium": 650,
+          "Hard": 700,
+          "Impoppable": 780
+        },
+        {
+          "Easy": 550,
+          "Medium": 650,
+          "Hard": 700,
+          "Impoppable": 780
+        },
+        {
+          "Easy": 850,
+          "Medium": 1000,
+          "Hard": 1080,
+          "Impoppable": 1200
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 36125,
+          "Medium": 42500,
+          "Hard": 45900,
+          "Impoppable": 51000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 15300,
+          "Medium": 18000,
+          "Hard": 19440,
+          "Impoppable": 21600
+        },
+        {
+          "Easy": 22100,
+          "Medium": 26000,
+          "Hard": 28080,
+          "Impoppable": 31200
+        }
+      ],
+      "2": [
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 465,
+          "Medium": 550,
+          "Hard": 595,
+          "Impoppable": 660
+        },
+        {
+          "Easy": 2165,
+          "Medium": 2550,
+          "Hard": 2755,
+          "Impoppable": 3060
+        },
+        {
+          "Easy": 19890,
+          "Medium": 23400,
+          "Hard": 25270,
+          "Impoppable": 28080
+        },
+        {
+          "Easy": 72250,
+          "Medium": 85000,
+          "Hard": 91800,
+          "Impoppable": 102000
+        }
+      ]
+    }
+  },
+  "heli_pilot": {
+    "base_cost": {
+      "Easy": 845,
+      "Medium": 990,
+      "Hard": 1070,
+      "Impoppable": 1190
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 1485,
+          "Medium": 1750,
+          "Hard": 1890,
+          "Impoppable": 2100
+        },
+        {
+          "Easy": 16660,
+          "Medium": 19600,
+          "Hard": 21170,
+          "Impoppable": 23520
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 2975,
+          "Medium": 3500,
+          "Hard": 3780,
+          "Impoppable": 4200
+        },
+        {
+          "Easy": 8075,
+          "Medium": 9500,
+          "Hard": 10260,
+          "Impoppable": 11400
+        },
+        {
+          "Easy": 25500,
+          "Medium": 30000,
+          "Hard": 32400,
+          "Impoppable": 36000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 7225,
+          "Medium": 8500,
+          "Hard": 9180,
+          "Impoppable": 10200
+        },
+        {
+          "Easy": 27200,
+          "Medium": 32000,
+          "Hard": 34560,
+          "Impoppable": 38400
+        }
+      ]
+    }
+  },
+  "mortar_monkey": {
+    "base_cost": {
+      "Easy": 395,
+      "Medium": 465,
+      "Hard": 500,
+      "Impoppable": 560
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 5525,
+          "Medium": 6500,
+          "Hard": 7020,
+          "Impoppable": 7800
+        },
+        {
+          "Easy": 30600,
+          "Medium": 36000,
+          "Hard": 38880,
+          "Impoppable": 43200
+        }
+      ],
+      "1": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 5525,
+          "Medium": 6500,
+          "Hard": 7020,
+          "Impoppable": 7800
+        },
+        {
+          "Easy": 32300,
+          "Medium": 38000,
+          "Hard": 41040,
+          "Impoppable": 45600
+        }
+      ],
+      "2": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 8925,
+          "Medium": 10500,
+          "Hard": 11340,
+          "Impoppable": 12600
+        },
+        {
+          "Easy": 34000,
+          "Medium": 40000,
+          "Hard": 43200,
+          "Impoppable": 48000
+        }
+      ]
+    }
+  },
+  "dartling_gunner": {
+    "base_cost": {
+      "Easy": 450,
+      "Medium": 535,
+      "Hard": 570,
+      "Impoppable": 630
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 9985,
+          "Medium": 11750,
+          "Hard": 12690,
+          "Impoppable": 14100
+        },
+        {
+          "Easy": 63750,
+          "Medium": 75000,
+          "Hard": 81000,
+          "Impoppable": 90000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 215,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 810,
+          "Medium": 950,
+          "Hard": 1025,
+          "Impoppable": 1140
+        },
+        {
+          "Easy": 4080,
+          "Medium": 4800,
+          "Hard": 5185,
+          "Impoppable": 5760
+        },
+        {
+          "Easy": 4715,
+          "Medium": 5550,
+          "Hard": 5995,
+          "Impoppable": 6660
+        },
+        {
+          "Easy": 51000,
+          "Medium": 60000,
+          "Hard": 64800,
+          "Impoppable": 72000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 1020,
+          "Medium": 1200,
+          "Hard": 1295,
+          "Impoppable": 1440
+        },
+        {
+          "Easy": 2890,
+          "Medium": 3400,
+          "Hard": 3670,
+          "Impoppable": 4080
+        },
+        {
+          "Easy": 10200,
+          "Medium": 12000,
+          "Hard": 12960,
+          "Impoppable": 14400
+        },
+        {
+          "Easy": 49300,
+          "Medium": 58000,
+          "Hard": 62640,
+          "Impoppable": 69600
+        }
+      ]
+    }
+  },
+  "wizard_monkey": {
+    "base_cost": {
+      "Easy": 210,
+      "Medium": 250,
+      "Hard": 270,
+      "Impoppable": 300
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 150,
+          "Medium": 175,
+          "Hard": 190,
+          "Impoppable": 210
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 1230,
+          "Medium": 1450,
+          "Hard": 1565,
+          "Impoppable": 1740
+        },
+        {
+          "Easy": 8500,
+          "Medium": 10000,
+          "Hard": 10800,
+          "Impoppable": 12000
+        },
+        {
+          "Easy": 27200,
+          "Medium": 32000,
+          "Hard": 34560,
+          "Impoppable": 38400
+        }
+      ],
+      "1": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 2805,
+          "Medium": 3300,
+          "Hard": 3565,
+          "Impoppable": 3960
+        },
+        {
+          "Easy": 5100,
+          "Medium": 6000,
+          "Hard": 6480,
+          "Impoppable": 7200
+        },
+        {
+          "Easy": 42500,
+          "Medium": 50000,
+          "Hard": 54000,
+          "Impoppable": 60000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 1275,
+          "Medium": 1500,
+          "Hard": 1620,
+          "Impoppable": 1800
+        },
+        {
+          "Easy": 2380,
+          "Medium": 2800,
+          "Hard": 3025,
+          "Impoppable": 3360
+        },
+        {
+          "Easy": 22525,
+          "Medium": 26500,
+          "Hard": 28620,
+          "Impoppable": 31800
+        }
+      ]
+    }
+  },
+  "super_monkey": {
+    "base_cost": {
+      "Easy": 2125,
+      "Medium": 2500,
+      "Hard": 2700,
+      "Impoppable": 3000
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 1700,
+          "Medium": 2000,
+          "Hard": 2160,
+          "Impoppable": 2400
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 17000,
+          "Medium": 20000,
+          "Hard": 21600,
+          "Impoppable": 24000
+        },
+        {
+          "Easy": 85000,
+          "Medium": 100000,
+          "Hard": 108000,
+          "Impoppable": 120000
+        },
+        {
+          "Easy": 425000,
+          "Medium": 500000,
+          "Hard": 540000,
+          "Impoppable": 600000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 1275,
+          "Medium": 1500,
+          "Hard": 1620,
+          "Impoppable": 1800
+        },
+        {
+          "Easy": 1615,
+          "Medium": 1900,
+          "Hard": 2050,
+          "Impoppable": 2280
+        },
+        {
+          "Easy": 6375,
+          "Medium": 7500,
+          "Hard": 8100,
+          "Impoppable": 9000
+        },
+        {
+          "Easy": 21250,
+          "Medium": 25000,
+          "Hard": 27000,
+          "Impoppable": 30000
+        },
+        {
+          "Easy": 59500,
+          "Medium": 70000,
+          "Hard": 75600,
+          "Impoppable": 84000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 1020,
+          "Medium": 1200,
+          "Hard": 1295,
+          "Impoppable": 1440
+        },
+        {
+          "Easy": 4760,
+          "Medium": 5600,
+          "Hard": 6050,
+          "Impoppable": 6720
+        },
+        {
+          "Easy": 47220,
+          "Medium": 55555,
+          "Hard": 60000,
+          "Impoppable": 66665
+        },
+        {
+          "Easy": 140800,
+          "Medium": 165650,
+          "Hard": 178900,
+          "Impoppable": 198780
+        }
+      ]
+    }
+  },
+  "ninja_monkey": {
+    "base_cost": {
+      "Easy": 340,
+      "Medium": 400,
+      "Hard": 430,
+      "Impoppable": 480
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 2335,
+          "Medium": 2750,
+          "Hard": 2970,
+          "Impoppable": 3300
+        },
+        {
+          "Easy": 29750,
+          "Medium": 35000,
+          "Hard": 37800,
+          "Impoppable": 42000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 1020,
+          "Medium": 1200,
+          "Hard": 1295,
+          "Impoppable": 1440
+        },
+        {
+          "Easy": 4420,
+          "Medium": 5200,
+          "Hard": 5615,
+          "Impoppable": 6240
+        },
+        {
+          "Easy": 18700,
+          "Medium": 22000,
+          "Hard": 23760,
+          "Impoppable": 26400
+        }
+      ],
+      "2": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 1910,
+          "Medium": 2250,
+          "Hard": 2430,
+          "Impoppable": 2700
+        },
+        {
+          "Easy": 4250,
+          "Medium": 5000,
+          "Hard": 5400,
+          "Impoppable": 6000
+        },
+        {
+          "Easy": 34000,
+          "Medium": 40000,
+          "Hard": 43200,
+          "Impoppable": 48000
+        }
+      ]
+    }
+  },
+  "alchemist_bloons_wiki_fandom": {
+    "base_cost": {
+      "Easy": 470,
+      "Medium": 550,
+      "Hard": 595,
+      "Impoppable": 660
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 1060,
+          "Medium": 1250,
+          "Hard": 1350,
+          "Impoppable": 1500
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 51000,
+          "Medium": 60000,
+          "Hard": 64800,
+          "Impoppable": 72000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 405,
+          "Medium": 475,
+          "Hard": 515,
+          "Impoppable": 570
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 3825,
+          "Medium": 4500,
+          "Hard": 4860,
+          "Impoppable": 5400
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 550,
+          "Medium": 650,
+          "Hard": 700,
+          "Impoppable": 780
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 850,
+          "Medium": 1000,
+          "Hard": 1080,
+          "Impoppable": 1200
+        },
+        {
+          "Easy": 2335,
+          "Medium": 2750,
+          "Hard": 2970,
+          "Impoppable": 3300
+        },
+        {
+          "Easy": 34000,
+          "Medium": 40000,
+          "Hard": 43200,
+          "Impoppable": 48000
+        }
+      ]
+    }
+  },
+  "druid_bloons_wiki_fandom": {
+    "base_cost": {
+      "Easy": 340,
+      "Medium": 400,
+      "Hard": 430,
+      "Impoppable": 480
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 720,
+          "Medium": 850,
+          "Hard": 920,
+          "Impoppable": 1020
+        },
+        {
+          "Easy": 1445,
+          "Medium": 1700,
+          "Hard": 1835,
+          "Impoppable": 2040
+        },
+        {
+          "Easy": 3825,
+          "Medium": 4500,
+          "Hard": 4860,
+          "Impoppable": 5400
+        },
+        {
+          "Easy": 51000,
+          "Medium": 60000,
+          "Hard": 64800,
+          "Impoppable": 72000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 890,
+          "Medium": 1050,
+          "Hard": 1135,
+          "Impoppable": 1260
+        },
+        {
+          "Easy": 4165,
+          "Medium": 4900,
+          "Hard": 5290,
+          "Impoppable": 5880
+        },
+        {
+          "Easy": 29750,
+          "Medium": 35000,
+          "Hard": 37800,
+          "Impoppable": 42000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 85,
+          "Medium": 100,
+          "Hard": 110,
+          "Impoppable": 120
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ]
+    }
+  },
+  "banana_farm": {
+    "base_cost": {
+      "Easy": 1040,
+      "Medium": 1225,
+      "Hard": 1325,
+      "Impoppable": 1470
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 16150,
+          "Medium": 19000,
+          "Hard": 20520,
+          "Impoppable": 22800
+        },
+        {
+          "Easy": 97750,
+          "Medium": 115000,
+          "Hard": 124200,
+          "Impoppable": 138000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 3100,
+          "Medium": 3650,
+          "Hard": 3940,
+          "Impoppable": 4380
+        },
+        {
+          "Easy": 6120,
+          "Medium": 7200,
+          "Hard": 7775,
+          "Impoppable": 8640
+        },
+        {
+          "Easy": 85000,
+          "Medium": 100000,
+          "Hard": 108000,
+          "Impoppable": 120000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 2295,
+          "Medium": 2700,
+          "Hard": 2915,
+          "Impoppable": 3240
+        },
+        {
+          "Easy": 12750,
+          "Medium": 15000,
+          "Hard": 16200,
+          "Impoppable": 18000
+        },
+        {
+          "Easy": 59500,
+          "Medium": 70000,
+          "Hard": 75600,
+          "Impoppable": 84000
+        }
+      ]
+    }
+  },
+  "spike_factory": {
+    "base_cost": {
+      "Easy": 700,
+      "Medium": 850,
+      "Hard": 930,
+      "Impoppable": 1050
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 1955,
+          "Medium": 2300,
+          "Hard": 2485,
+          "Impoppable": 2760
+        },
+        {
+          "Easy": 8075,
+          "Medium": 9500,
+          "Hard": 10260,
+          "Impoppable": 11400
+        },
+        {
+          "Easy": 106250,
+          "Medium": 125000,
+          "Hard": 135000,
+          "Impoppable": 150000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 5950,
+          "Medium": 7000,
+          "Hard": 7560,
+          "Impoppable": 8400
+        },
+        {
+          "Easy": 34850,
+          "Medium": 41000,
+          "Hard": 44280,
+          "Impoppable": 49200
+        }
+      ],
+      "2": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 1105,
+          "Medium": 1300,
+          "Hard": 1405,
+          "Impoppable": 1560
+        },
+        {
+          "Easy": 3060,
+          "Medium": 3600,
+          "Hard": 3890,
+          "Impoppable": 4320
+        },
+        {
+          "Easy": 25500,
+          "Medium": 30000,
+          "Hard": 32400,
+          "Impoppable": 36000
+        }
+      ]
+    }
+  },
+  "monkey_village": {
+    "base_cost": {
+      "Easy": 1000,
+      "Medium": 1175,
+      "Hard": 1270,
+      "Impoppable": 1410
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 1275,
+          "Medium": 1500,
+          "Hard": 1620,
+          "Impoppable": 1800
+        },
+        {
+          "Easy": 680,
+          "Medium": 800,
+          "Hard": 865,
+          "Impoppable": 960
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 21250,
+          "Medium": 25000,
+          "Hard": 27000,
+          "Impoppable": 30000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 1700,
+          "Medium": 2000,
+          "Hard": 2160,
+          "Impoppable": 2400
+        },
+        {
+          "Easy": 6375,
+          "Medium": 7500,
+          "Hard": 8100,
+          "Impoppable": 9000
+        },
+        {
+          "Easy": 17000,
+          "Medium": 20000,
+          "Hard": 21600,
+          "Impoppable": 24000
+        },
+        {
+          "Easy": 34000,
+          "Medium": 40000,
+          "Hard": 43200,
+          "Impoppable": 48000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 8500,
+          "Medium": 10000,
+          "Hard": 10800,
+          "Impoppable": 12000
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        }
+      ]
+    }
+  },
+  "engineer_monkey": {
+    "base_cost": {
+      "Easy": 300,
+      "Medium": 350,
+      "Hard": 380,
+      "Impoppable": 420
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 425,
+          "Medium": 500,
+          "Hard": 540,
+          "Impoppable": 600
+        },
+        {
+          "Easy": 340,
+          "Medium": 400,
+          "Hard": 430,
+          "Impoppable": 480
+        },
+        {
+          "Easy": 490,
+          "Medium": 575,
+          "Hard": 620,
+          "Impoppable": 690
+        },
+        {
+          "Easy": 2125,
+          "Medium": 2500,
+          "Hard": 2700,
+          "Impoppable": 3000
+        },
+        {
+          "Easy": 27200,
+          "Medium": 32000,
+          "Hard": 34560,
+          "Impoppable": 38400
+        }
+      ],
+      "1": [
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 765,
+          "Medium": 900,
+          "Hard": 970,
+          "Impoppable": 1080
+        },
+        {
+          "Easy": 11475,
+          "Medium": 13500,
+          "Hard": 14580,
+          "Impoppable": 16200
+        },
+        {
+          "Easy": 61200,
+          "Medium": 72000,
+          "Hard": 77760,
+          "Impoppable": 86400
+        }
+      ],
+      "2": [
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 185,
+          "Medium": 220,
+          "Hard": 235,
+          "Impoppable": 265
+        },
+        {
+          "Easy": 380,
+          "Medium": 450,
+          "Hard": 485,
+          "Impoppable": 540
+        },
+        {
+          "Easy": 3060,
+          "Medium": 3600,
+          "Hard": 3890,
+          "Impoppable": 4320
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ]
+    }
+  }
+}

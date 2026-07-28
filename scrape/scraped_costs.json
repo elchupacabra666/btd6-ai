@@ -1,0 +1,426 @@
+{
+  "boomerang_monkey": {
+    "base_cost": {
+      "Easy": 270,
+      "Medium": 315,
+      "Hard": 340,
+      "Impoppable": 380
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 240,
+          "Medium": 280,
+          "Hard": 300,
+          "Impoppable": 335
+        },
+        {
+          "Easy": 510,
+          "Medium": 600,
+          "Hard": 650,
+          "Impoppable": 720
+        },
+        {
+          "Easy": 1700,
+          "Medium": 2000,
+          "Hard": 2160,
+          "Impoppable": 2400
+        },
+        {
+          "Easy": 27625,
+          "Medium": 32500,
+          "Hard": 35100,
+          "Impoppable": 39000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 150,
+          "Medium": 175,
+          "Hard": 190,
+          "Impoppable": 210
+        },
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 1060,
+          "Medium": 1250,
+          "Hard": 1350,
+          "Impoppable": 1500
+        },
+        {
+          "Easy": 3570,
+          "Medium": 4200,
+          "Hard": 4535,
+          "Impoppable": 5040
+        },
+        {
+          "Easy": 29750,
+          "Medium": 35000,
+          "Hard": 37800,
+          "Impoppable": 42000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 85,
+          "Medium": 100,
+          "Hard": 110,
+          "Impoppable": 120
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 1100,
+          "Medium": 1300,
+          "Hard": 1405,
+          "Impoppable": 1560
+        },
+        {
+          "Easy": 2295,
+          "Medium": 2700,
+          "Hard": 2915,
+          "Impoppable": 3240
+        },
+        {
+          "Easy": 42500,
+          "Medium": 50000,
+          "Hard": 54000,
+          "Impoppable": 60000
+        }
+      ]
+    }
+  },
+  "mermonkey_bloons_wiki_fandom": {
+    "base_cost": {
+      "Easy": 235,
+      "Medium": 275,
+      "Hard": 295,
+      "Impoppable": 330
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 210,
+          "Medium": 250,
+          "Hard": 270,
+          "Impoppable": 300
+        },
+        {
+          "Easy": 1360,
+          "Medium": 1600,
+          "Hard": 1730,
+          "Impoppable": 1920
+        },
+        {
+          "Easy": 3570,
+          "Medium": 4200,
+          "Hard": 4535,
+          "Impoppable": 5040
+        },
+        {
+          "Easy": 19550,
+          "Medium": 23000,
+          "Hard": 24840,
+          "Impoppable": 27600
+        }
+      ],
+      "1": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 255,
+          "Medium": 300,
+          "Hard": 325,
+          "Impoppable": 360
+        },
+        {
+          "Easy": 1955,
+          "Medium": 2300,
+          "Hard": 2485,
+          "Impoppable": 2760
+        },
+        {
+          "Easy": 6800,
+          "Medium": 8000,
+          "Hard": 8640,
+          "Impoppable": 9600
+        },
+        {
+          "Easy": 44200,
+          "Medium": 52000,
+          "Hard": 56160,
+          "Impoppable": 62400
+        }
+      ],
+      "2": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 240,
+          "Medium": 280,
+          "Hard": 300,
+          "Impoppable": 335
+        },
+        {
+          "Easy": 1700,
+          "Medium": 2000,
+          "Hard": 2160,
+          "Impoppable": 2400
+        },
+        {
+          "Easy": 6460,
+          "Medium": 7600,
+          "Hard": 8210,
+          "Impoppable": 9120
+        },
+        {
+          "Easy": 21250,
+          "Medium": 25000,
+          "Hard": 27000,
+          "Impoppable": 30000
+        }
+      ]
+    }
+  },
+  "beast_handler_bloons_wiki_fandom": {
+    "base_cost": {
+      "Easy": 210,
+      "Medium": 250,
+      "Hard": 270,
+      "Impoppable": 300
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 135,
+          "Medium": 160,
+          "Hard": 175,
+          "Impoppable": 190
+        },
+        {
+          "Easy": 690,
+          "Medium": 810,
+          "Hard": 875,
+          "Impoppable": 970
+        },
+        {
+          "Easy": 1710,
+          "Medium": 2010,
+          "Hard": 2170,
+          "Impoppable": 2410
+        },
+        {
+          "Easy": 10625,
+          "Medium": 12500,
+          "Hard": 13500,
+          "Impoppable": 15000
+        },
+        {
+          "Easy": 38250,
+          "Medium": 45000,
+          "Hard": 48600,
+          "Impoppable": 54000
+        }
+      ],
+      "1": [
+        {
+          "Easy": 150,
+          "Medium": 175,
+          "Hard": 190,
+          "Impoppable": 210
+        },
+        {
+          "Easy": 705,
+          "Medium": 830,
+          "Hard": 895,
+          "Impoppable": 995
+        },
+        {
+          "Easy": 1755,
+          "Medium": 2065,
+          "Hard": 2230,
+          "Impoppable": 2480
+        },
+        {
+          "Easy": 8075,
+          "Medium": 9500,
+          "Hard": 10260,
+          "Impoppable": 11400
+        },
+        {
+          "Easy": 51000,
+          "Medium": 60000,
+          "Hard": 64800,
+          "Impoppable": 72000
+        }
+      ],
+      "2": [
+        {
+          "Easy": 160,
+          "Medium": 190,
+          "Hard": 205,
+          "Impoppable": 230
+        },
+        {
+          "Easy": 730,
+          "Medium": 860,
+          "Hard": 930,
+          "Impoppable": 1030
+        },
+        {
+          "Easy": 1800,
+          "Medium": 2120,
+          "Hard": 2290,
+          "Impoppable": 2545
+        },
+        {
+          "Easy": 7650,
+          "Medium": 9000,
+          "Hard": 9720,
+          "Impoppable": 10800
+        },
+        {
+          "Easy": 25500,
+          "Medium": 30000,
+          "Hard": 32400,
+          "Impoppable": 36000
+        }
+      ]
+    }
+  },
+  "desperado_bloons_wiki_fandom": {
+    "base_cost": {
+      "Easy": 255,
+      "Medium": 300,
+      "Hard": 325,
+      "Impoppable": 360
+    },
+    "upgrades": {
+      "0": [
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 170,
+          "Medium": 200,
+          "Hard": 215,
+          "Impoppable": 240
+        },
+        {
+          "Easy": 1020,
+          "Medium": 1200,
+          "Hard": 1295,
+          "Impoppable": 1440
+        },
+        {
+          "Easy": 4930,
+          "Medium": 5800,
+          "Hard": 6265,
+          "Impoppable": 6960
+        },
+        {
+          "Easy": 14025,
+          "Medium": 16500,
+          "Hard": 17820,
+          "Impoppable": 19800
+        }
+      ],
+      "1": [
+        {
+          "Easy": 125,
+          "Medium": 150,
+          "Hard": 160,
+          "Impoppable": 180
+        },
+        {
+          "Easy": 295,
+          "Medium": 350,
+          "Hard": 380,
+          "Impoppable": 420
+        },
+        {
+          "Easy": 2550,
+          "Medium": 3000,
+          "Hard": 3240,
+          "Impoppable": 3600
+        },
+        {
+          "Easy": 5525,
+          "Medium": 6500,
+          "Hard": 7020,
+          "Impoppable": 7800
+        },
+        {
+          "Easy": 35700,
+          "Medium": 42000,
+          "Hard": 45360,
+          "Impoppable": 50400
+        }
+      ],
+      "2": [
+        {
+          "Easy": 185,
+          "Medium": 220,
+          "Hard": 240,
+          "Impoppable": 265
+        },
+        {
+          "Easy": 240,
+          "Medium": 280,
+          "Hard": 300,
+          "Impoppable": 335
+        },
+        {
+          "Easy": 1785,
+          "Medium": 2100,
+          "Hard": 2270,
+          "Impoppable": 2520
+        },
+        {
+          "Easy": 5525,
+          "Medium": 6500,
+          "Hard": 7020,
+          "Impoppable": 7800
+        },
+        {
+          "Easy": 26350,
+          "Medium": 31000,
+          "Hard": 33480,
+          "Impoppable": 37200
+        }
+      ]
+    }
+  }
+}
