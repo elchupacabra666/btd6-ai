@@ -3,7 +3,7 @@ import time
 import logging
 
 from game_state import GameState
-from game_controller import GameController
+from game_controller import GameController, OCRReadError
 from actions import Action, ActionResult, PlaceMonkeyAction, UpgradeMonkeyAction, StartRoundAction
 
 
@@ -40,7 +40,7 @@ class BTD6Env:
     """
 
     def __init__(self, state: GameState, controller: GameController, agent,
-                 round_poll_interval: float = 5.0):
+                 round_poll_interval: float = 5.0, killswitch=None):
         self.state = state
         self.controller = controller
         self.agent = agent
@@ -50,6 +50,8 @@ class BTD6Env:
 
         self._lives_before_round = None
         self.log = _setup_logger()
+        self.killswitch = killswitch
+        self.last_outcome = None  # "victory" | "defeat" | "killed", set at end of run_episode()
 
     # ---------------------------------------------------------------
     # Episode loop
@@ -58,25 +60,39 @@ class BTD6Env:
     def run_episode(self):
         """Runs one full game from current state until game over."""
         self.log.info("=== Episode start ===")
-        self.state.sync(self.controller)
-        self.log.info(f"Initial state: money={self.state.money} "
-                       f"lives={self.state.lives} round={self.state.current_round}")
-
-        while not self.is_game_over():
-            self._build_phase()
+        self.last_outcome = None
+        try:
             self.state.sync(self.controller)
-            self.log.info(f"Sync after build phase: money={self.state.money} "
+            self.log.info(f"Initial state: money={self.state.money} "
                            f"lives={self.state.lives} round={self.state.current_round}")
-            self._round_phase()
 
-        self.log.info(f"=== Episode end === final round={self.state.current_round} "
-                       f"lives={self.state.lives}")
+            while not self.is_game_over():
+                if self._check_kill():
+                    self.last_outcome = "killed"
+                    break
+                self._build_phase()
+                self.state.sync(self.controller)
+                if self._check_kill():
+                    self.last_outcome = "killed"
+                    break
+                self._round_phase()
+        except OCRReadError as e:
+            self.log.error(f"OCR read failed repeatedly -- aborting episode early: {e}")
+            self.last_outcome = "ocr_error"
+
+        if self.last_outcome is None:
+            self.last_outcome = "victory" if self.controller.check_victory_screen() else "defeat"
+
+        self.log.info(f"=== Episode end === outcome={self.last_outcome} "
+                       f"final round={self.state.current_round} lives={self.state.lives}")
         return self.state
 
     def _build_phase(self):
         self.log.info("-- Build phase start --")
         self.log.info(f"Money {self.state.money}")
         while True:
+            if self._check_kill():
+                return
             action = self.agent.choose_action(self.state)
 
             if isinstance(action, StartRoundAction):
@@ -102,7 +118,7 @@ class BTD6Env:
             self.log.info(f"Placement attempt {attempt + 1}/{max_attempts} "
                            f"for {tower_type} at {action.position}")
 
-            obs, reward, done, info = self.step(action)
+            obs, reward, info = self.step(action)
             result = info.get("result")
 
             if result is not None and result.success:
@@ -120,6 +136,9 @@ class BTD6Env:
                                f"— retrying with new position")
 
             action = self.agent.retry_placement(tower_type)
+            if action is None:
+                self.log.info(f"Placement ABANDONED (agent declined retry): {tower_type}")
+                return False
 
         self.log.warning(f"Placement GAVE UP after {max_attempts} attempts: {tower_type}")
         return False
@@ -130,7 +149,7 @@ class BTD6Env:
             self.log.info(f"Upgrade attempt {attempt + 1}/{max_attempts} "
                            f"for monkey {monkey_id} path {path_index}")
 
-            obs, reward, done, info = self.step(action)
+            obs, reward, info = self.step(action)
             result = info.get("result")
 
             if result is not None and result.success:
@@ -163,7 +182,15 @@ class BTD6Env:
         self._wait_for_round_end()
         self.round_active = False
 
-        self.state.sync(self.controller)
+        if self.controller.check_defeat_screen():
+            self.log.info("Defeat screen detected -- skipping OCR sync, setting lives=0")
+            self.state.lives = 0
+        elif self.controller.check_victory_screen():
+            self.log.info("Victory screen detected -- skipping OCR sync")
+        else:
+            self.state.sync(self.controller)
+            self.state.advance_round()
+
         lives_lost = self._lives_before_round - self.state.lives
         self.log.info(f"-- Round phase end -- round={self.state.current_round}, "
                        f"lives={self.state.lives} (lost {lives_lost})")
@@ -185,26 +212,36 @@ class BTD6Env:
         action.commit(self.state, result)
 
         reward = self._compute_action_reward(result)
-        done = self.is_game_over()
-        return self._obs(), reward, done, {"result": result}
+        return self._obs(), reward, {"result": result}
 
     # ---------------------------------------------------------------
     # Round-end detection
     # ---------------------------------------------------------------
 
     def _wait_for_round_end(self):
-        """Polls the round-end pixel until the round finishes, ensuring 2x speed each poll."""
+        """Polls the round-end pixel until the round finishes. Only clicks
+        ensure_double_speed() on the first poll: this button is dual-purpose
+        (speed toggle mid-round, start-round in build phase), so clicking it
+        on every poll risks hitting it again after check_round_end() lagged
+        behind reality, silently starting the next round early."""
         poll_count = 0
         while True:
             time.sleep(self.round_poll_interval)
             poll_count += 1
+            if self._check_kill():
+                return False
+
+            if self.is_game_over():
+                break
 
             if self.controller.check_round_end():
                 self.log.info(f"Round end detected after {poll_count} polls "
                                f"({poll_count * self.round_poll_interval:.1f}s)")
                 return True
 
-            self.controller.ensure_double_speed()
+            if poll_count == 1:
+                self.controller.ensure_double_speed()
+
             self.log.debug(f"Poll {poll_count}: round still active")
 
     # ---------------------------------------------------------------
@@ -218,7 +255,28 @@ class BTD6Env:
         return -1.0
 
     def is_game_over(self) -> bool:
-        return self.state.lives <= 0
+        # 1. Check for a loss
+        if self.state.lives <= 0:
+            self.log.info("Game Over detected: Out of lives.")
+            return True
+        
+        # 2. Check for a win
+        if self.controller.check_victory_screen():
+            self.log.info("Game Over detected: Victory screen reached!")
+            return True
+
+        # 3. Check for a loss screen (lives may not have hit 0 in stale state yet)
+        if self.controller.check_defeat_screen():
+            self.log.info("Game Over detected: Defeat screen reached!")
+            return True
+
+        return False
 
     def _obs(self):
         return self.state.to_dict()
+    
+    def _check_kill(self) -> bool:
+        if self.killswitch is not None and self.killswitch.is_triggered():
+            self.log.warning("Kill switch triggered — aborting episode at safe checkpoint")
+            return True
+        return False

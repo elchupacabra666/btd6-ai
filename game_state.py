@@ -14,6 +14,7 @@ class Monkey:
     def to_dict(self):
         # Helps with saving to JSON later
         return {
+            "id": self.id,
             "tower_type": self.tower_type,
             "position": self.position,
             "upgrades": self.upgrades,
@@ -68,11 +69,13 @@ class Monkey:
 
 class GameState:
     def __init__(self, starting_money, starting_lives, starting_round, difficulty):
+        Monkey._id_counter = itertools.count(1)  # monkey ids restart at 1 each episode
         self.money = starting_money
         self.lives = starting_lives
         self.current_round = starting_round
         self.difficulty = difficulty
         self.placed_monkeys = []
+        self.build_log = []  # chronological log of place/upgrade events, tagged with round
 
     # --- placement / upgrades ---
 
@@ -99,16 +102,29 @@ class GameState:
             return False
         return m.apply_upgrade(path_index, cost)
 
+    # --- build/upgrade history ---
+
+    def log_event(self, event_type, **details):
+        """Records a successful place/upgrade, tagged with the round it happened in
+        (i.e. the round about to start when the build-phase action was committed)."""
+        self.build_log.append({"round": self.current_round, "type": event_type, **details})
+
     # --- meta state ---
 
     def update_round(self, new_round):
         self.current_round = new_round
 
+    def advance_round(self):
+        """Call once a round has finished playing, moving state into the
+        next build phase. Round is tracked locally like this instead of
+        being re-read via OCR every sync, since the round counter is the
+        value OCR misreads most."""
+        self.current_round += 1
+
     def sync(self, controller):
-        """Refresh money/lives/round from the live game via OCR."""
+        """Refresh money/lives from the live game via OCR."""
         self.money = controller.read_money()
         self.lives = controller.read_lives()
-        self.current_round = controller.read_round()
 
     # --- persistence ---
 
@@ -118,6 +134,7 @@ class GameState:
             "lives": self.lives,
             "round": self.current_round,
             "placed_monkeys": [m.to_dict() for m in self.placed_monkeys],
+            "build_log": self.build_log,
         }
 
     def save_to_json(self, filename="learning_memory.json"):

@@ -68,6 +68,7 @@ def click(x: int, y: int) -> bool:
         return False
     user32.mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
     user32.mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
+    print(f"Clicked: {x}, {y}")
     return True
 
 

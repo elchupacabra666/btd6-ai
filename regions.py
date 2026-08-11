@@ -7,13 +7,22 @@ ROUND_REGION = (1379, 27, 1660, 69)
 
 ROUND_END_PIXEL = (1830, 1000)
 
+VICTORY_PIXELS = [(555, 197), (681, 357), (1355, 327)]
+VICTORY_PIXELS_COLOR = (255, 255, 255)
+
+DEFEAT_PIXELS = [(836, 238), (854, 135), (986, 120), (1028, 180)]
+DEFEAT_PIXELS_COLOR = (255, 255, 255)
+
+RESTART_BUTTON = (855, 855)
+RESTART_BUTTON_CONFIRM = (1139, 723)
+
 START_ROUND_BUTTON = (1840, 1030) 
 PRESS_TO_START_BUTTON_COLOR = (255, 255, 255)
 
 SPEED_TOGGLE_PIXEL = (1842, 992)
 SPEED_TOGGLE_ON_COLOR = (3, 242, 163)
 
-MAP_BOUNDS = (37, 15, 1620, 1060)
+MAP_BOUNDS = (37, 100, 1550, 1060)
 
 # Shop icons: fixed screen position regardless of game state
 MONKEY_BUY_SHORTCUT = {
@@ -29,17 +38,17 @@ MONKEY_BUY_SHORTCUT = {
     "monkey_ace": "v",
     "heli_pilot": "b",
     "mortar_monkey": "n",
-    "dartling_gunner": "m",
+    # "dartling_gunner": "m",
     "wizard_monkey": "a",
     "super_monkey": "s",
     "ninja_monkey": "d",
     "alchemist": "f",
     "druid": "g",
-    "banana_farm": "h",
+    # "banana_farm": "h",
     "spike_factory": "j",
     "monkey_village": "k",
     "engineer_monkey": "l",
-    "beast_handler": "i",
+    # "beast_handler": "i",
     "heroes": "u"
 }
 
@@ -51,5 +60,3 @@ UPGRADE_PATH_SHORTCUT = {
     1: ".",  # middle path
     2: "/",  # bottom path
 }
-
-SCREEN_MIDPOINT_X = 1920 // 2  # adjust to your resolution

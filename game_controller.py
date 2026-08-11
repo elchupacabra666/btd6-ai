@@ -27,9 +27,7 @@ class GameController:
             frame = capture.grab_screen()
             x1, y1, x2, y2 = region
             crop = frame[y1:y2, x1:x2]
-            print(f"Reading: {region_name!r}")
             text, _ = getTextFromImage(crop, debug=False)
-            print(f"Money read: {text}")
             try:
                 return int(text.strip())
             except ValueError:
@@ -61,21 +59,60 @@ class GameController:
     def check_round_end(self):
         return self._check_pixel_color(regions.ROUND_END_PIXEL) == regions.PRESS_TO_START_BUTTON_COLOR
     
+    def check_victory_screen(self):
+        """
+        Iterates through the victory pixels defined in regions.py.
+        Returns True only if all pixels match the target victory color.
+        """
+        for pixel_coord in regions.VICTORY_PIXELS:
+            # Check the current pixel using your existing method
+            current_color = self._check_pixel_color(pixel_coord)
+            
+            # If even one pixel doesn't match, we are not on the victory screen
+            if current_color != regions.VICTORY_PIXELS_COLOR:
+                return False
+                
+        # If the loop finishes without returning False, all pixels matched!
+        return True
+
+    def check_defeat_screen(self):
+        """
+        Checks the defeat-screen pixels defined in regions.py.
+        Returns True only if ALL of them match the target color.
+        """
+        for pixel_coord in regions.DEFEAT_PIXELS:
+            current_color = self._check_pixel_color(pixel_coord)
+            if current_color != regions.DEFEAT_PIXELS_COLOR:
+                return False
+
+        return True
+
+    def click_restart(self):
+        """Clicks the restart/retry button shown on the defeat screen."""
+        x, y = regions.RESTART_BUTTON
+        controls.click(x, y)
+        time.sleep(1)
+        x, y, = regions.RESTART_BUTTON_CONFIRM
+        controls.click(x, y)
+        time.sleep(1)
+
     def is_double_speed(self):
         check = self._check_pixel_color(regions.SPEED_TOGGLE_PIXEL)
+        print("Double click checked")
         return check == regions.SPEED_TOGGLE_ON_COLOR
 
     def ensure_double_speed(self):
         """Click the speed toggle only if the game isn't already at 2x."""
         if not self.is_double_speed():
             controls.click(*regions.START_ROUND_BUTTON)
-            time.sleep(0.1)
+            print("Double speed clicked")
+            time.sleep(0.01)
 
     # ---------- mechanical actions ----------
 
     def select_monkey_shortcut(self, tower_type):
         controls.send_key(regions.MONKEY_BUY_SHORTCUT[tower_type])
-        time.sleep(0.01)
+        time.sleep(1)
 
     def cancel_placement(self):
         """Press Escape to back out of any held-tower placement mode."""
@@ -96,16 +133,19 @@ class GameController:
     def click_start_round(self):
         x, y = regions.START_ROUND_BUTTON
         controls.click(x, y)
+        print("Start round clicked")
         time.sleep(0.01)
 
     def click_monkey(self, position):
         x, y = position
         controls.click(x, y)
-        time.sleep(0.05)  # selection animation
+        time.sleep(1)  # selection animation
 
     def click_upgrade_path(self, monkey_position, path_index):
         """Selects the monkey, then sends the shortcut key for the given
         upgrade path (0=top, 1=middle, 2=bottom)."""
         self.click_monkey(monkey_position)
         controls.send_key(regions.UPGRADE_PATH_SHORTCUT[path_index])
-        time.sleep(0.01)
+        time.sleep(1)
+
+

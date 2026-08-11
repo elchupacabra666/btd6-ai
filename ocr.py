@@ -140,15 +140,15 @@ def getTextFromImage(image, debug=False):
     if debug:
         clear_debug_dir()
     imageCandidate = formatImageOCR(image, debug=debug)
-    # Write result to disk:
-    
+    # Tesseract expects dark text on a light background; formatImageOCR
+    # produces the opposite (white text on black), so invert before OCR.
+    ocrReadyImage = 255 - imageCandidate
+
     # DEBUG log round to disk
     if debug:
-        save_debug_image("14_tesseract_input", imageCandidate)
+        save_debug_image("14_tesseract_input", ocrReadyImage)
 
-    # NOTE: This part seems to be buggy
-    # Get current round from screenshot with tesseract
-    raw_text = pytesseract.image_to_string(imageCandidate, config='--psm 7 -c tessedit_char_whitelist=0123456789$/')
+    raw_text = pytesseract.image_to_string(ocrReadyImage, config='--psm 7 -c tessedit_char_whitelist=0123456789$/')
     if debug:
         print(f"Raw text: {raw_text!r}")
     text = raw_text.split("/")[0].replace("\n", "").replace("+", "").replace("$", "")

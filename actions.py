@@ -39,7 +39,7 @@ class PlaceMonkeyAction(Action):
     
     def verify(self, controller, state):
         money_before = state.money
-        sleep(0.5)
+        sleep(0.2)
         try:
             money_after = controller.read_money()
         except OCRReadError:
@@ -55,8 +55,10 @@ class PlaceMonkeyAction(Action):
     def commit(self, state, result):
         if result.success:
             cost = tower_cost(self.monkey_type, state.difficulty)
-            state.add_monkey(self.monkey_type, self.position, cost=cost)
+            monkey = state.add_monkey(self.monkey_type, self.position, cost=cost)
             state.money = result.money_after
+            state.log_event("place", monkey_id=monkey.id, tower_type=self.monkey_type,
+                             position=self.position, cost=cost)
 
 class UpgradeMonkeyAction(Action):
     def __init__(self, monkey_id, path_index):
@@ -80,7 +82,7 @@ class UpgradeMonkeyAction(Action):
 
     def verify(self, controller, state):
         money_before = state.money
-        sleep(0.5)
+        sleep(0.2)
         try:
             money_after = controller.read_money()
         except OCRReadError:
@@ -96,8 +98,13 @@ class UpgradeMonkeyAction(Action):
 
     def commit(self, state, result):
         if result.success:
+            monkey = state.get_monkey(self.monkey_id)
+            tower_type = monkey.tower_type if monkey else None
+            position = monkey.position if monkey else None
             state.upgrade_monkey(self.monkey_id, self.path_index, cost=self.cost)
             state.money = result.money_after
+            state.log_event("upgrade", monkey_id=self.monkey_id, tower_type=tower_type,
+                             position=position, path_index=self.path_index, cost=self.cost)
 
 
 
@@ -116,4 +123,4 @@ class StartRoundAction(Action):
         return ActionResult(success=True, money_before=state.money, money_after=state.money)
 
     def commit(self, state, result):
-        pass  # nothing to update on GameState directly; Env handles round transition
+        state.log_event("start_round")
