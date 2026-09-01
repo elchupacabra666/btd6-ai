@@ -98,6 +98,8 @@ class BTD6Env:
             if isinstance(action, StartRoundAction):
                 self.log.info("Agent chose: start round")
                 self.step(action)
+                time.sleep(0.01)  # let the button finish switching to its speed-toggle state
+                self.controller.ensure_double_speed()
                 break
 
             elif isinstance(action, PlaceMonkeyAction):
@@ -205,7 +207,7 @@ class BTD6Env:
 
         if not action.validate(self.state):
             self.log.info(f"Action invalid at validate(): {action.__class__.__name__}")
-            return self._obs(), self._invalid_action_penalty(), False, {"invalid": True}
+            return self._obs(), self._invalid_action_penalty(), {"invalid": True}
 
         action.execute(self.controller, self.state)
         result = action.verify(self.controller, self.state)
@@ -219,11 +221,11 @@ class BTD6Env:
     # ---------------------------------------------------------------
 
     def _wait_for_round_end(self):
-        """Polls the round-end pixel until the round finishes. Only clicks
-        ensure_double_speed() on the first poll: this button is dual-purpose
-        (speed toggle mid-round, start-round in build phase), so clicking it
-        on every poll risks hitting it again after check_round_end() lagged
-        behind reality, silently starting the next round early."""
+        """Polls the round-end pixel until the round finishes. Double speed is
+        ensured once, right after StartRoundAction fires in _build_phase() --
+        not here -- because this button is dual-purpose (speed toggle mid-round,
+        start-round in build phase) and by the time we're polling we can no
+        longer be sure which state it's in if check_round_end() has lagged."""
         poll_count = 0
         while True:
             time.sleep(self.round_poll_interval)
@@ -238,9 +240,6 @@ class BTD6Env:
                 self.log.info(f"Round end detected after {poll_count} polls "
                                f"({poll_count * self.round_poll_interval:.1f}s)")
                 return True
-
-            if poll_count == 1:
-                self.controller.ensure_double_speed()
 
             self.log.debug(f"Poll {poll_count}: round still active")
 

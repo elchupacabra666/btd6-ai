@@ -1,0 +1,1711 @@
+[
+    {
+        "episode": 1,
+        "outcome": "defeat",
+        "final_round": 6,
+        "final_lives": 0,
+        "difficulty": "impoppable",
+        "monkeys_placed": 0,
+        "build_log": [
+            {
+                "round": 6,
+                "type": "start_round"
+            }
+        ],
+        "final_monkeys": [],
+        "source": "random",
+        "generation": 0
+    },
+    {
+        "episode": 8,
+        "outcome": "killed",
+        "final_round": 6,
+        "final_lives": 1,
+        "difficulty": "impoppable",
+        "monkeys_placed": 1,
+        "build_log": [
+            {
+                "round": 6,
+                "type": "place",
+                "monkey_id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    393,
+                    724
+                ],
+                "cost": 300
+            }
+        ],
+        "final_monkeys": [
+            {
+                "id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    393,
+                    724
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 300
+            }
+        ],
+        "source": "random",
+        "generation": 0
+    },
+    {
+        "episode": 11,
+        "outcome": "victory",
+        "final_round": 39,
+        "final_lives": 171,
+        "difficulty": "easy",
+        "monkeys_placed": 25,
+        "build_log": [
+            {
+                "round": 1,
+                "type": "place",
+                "monkey_id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1450,
+                    494
+                ],
+                "cost": 210
+            },
+            {
+                "round": 1,
+                "type": "start_round"
+            },
+            {
+                "round": 2,
+                "type": "upgrade",
+                "monkey_id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1450,
+                    494
+                ],
+                "path_index": 2,
+                "cost": 255
+            },
+            {
+                "round": 2,
+                "type": "place",
+                "monkey_id": 2,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    1413,
+                    685
+                ],
+                "cost": 300
+            },
+            {
+                "round": 2,
+                "type": "start_round"
+            },
+            {
+                "round": 3,
+                "type": "start_round"
+            },
+            {
+                "round": 4,
+                "type": "upgrade",
+                "monkey_id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1450,
+                    494
+                ],
+                "path_index": 0,
+                "cost": 150
+            },
+            {
+                "round": 4,
+                "type": "start_round"
+            },
+            {
+                "round": 5,
+                "type": "place",
+                "monkey_id": 3,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    979,
+                    372
+                ],
+                "cost": 300
+            },
+            {
+                "round": 5,
+                "type": "start_round"
+            },
+            {
+                "round": 6,
+                "type": "place",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "cost": 170
+            },
+            {
+                "round": 6,
+                "type": "start_round"
+            },
+            {
+                "round": 7,
+                "type": "upgrade",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "path_index": 0,
+                "cost": 120
+            },
+            {
+                "round": 7,
+                "type": "start_round"
+            },
+            {
+                "round": 8,
+                "type": "upgrade",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "path_index": 0,
+                "cost": 170
+            },
+            {
+                "round": 8,
+                "type": "start_round"
+            },
+            {
+                "round": 9,
+                "type": "place",
+                "monkey_id": 5,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1015,
+                    227
+                ],
+                "cost": 170
+            },
+            {
+                "round": 9,
+                "type": "upgrade",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "path_index": 1,
+                "cost": 85
+            },
+            {
+                "round": 9,
+                "type": "start_round"
+            },
+            {
+                "round": 10,
+                "type": "upgrade",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "path_index": 1,
+                "cost": 160
+            },
+            {
+                "round": 10,
+                "type": "start_round"
+            },
+            {
+                "round": 11,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    1413,
+                    685
+                ],
+                "path_index": 1,
+                "cost": 210
+            },
+            {
+                "round": 11,
+                "type": "start_round"
+            },
+            {
+                "round": 12,
+                "type": "upgrade",
+                "monkey_id": 3,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    979,
+                    372
+                ],
+                "path_index": 1,
+                "cost": 210
+            },
+            {
+                "round": 12,
+                "type": "start_round"
+            },
+            {
+                "round": 13,
+                "type": "start_round"
+            },
+            {
+                "round": 14,
+                "type": "start_round"
+            },
+            {
+                "round": 15,
+                "type": "upgrade",
+                "monkey_id": 5,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1015,
+                    227
+                ],
+                "path_index": 1,
+                "cost": 85
+            },
+            {
+                "round": 15,
+                "type": "upgrade",
+                "monkey_id": 3,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    979,
+                    372
+                ],
+                "path_index": 2,
+                "cost": 380
+            },
+            {
+                "round": 15,
+                "type": "place",
+                "monkey_id": 6,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    435,
+                    520
+                ],
+                "cost": 300
+            },
+            {
+                "round": 15,
+                "type": "upgrade",
+                "monkey_id": 5,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1015,
+                    227
+                ],
+                "path_index": 2,
+                "cost": 75
+            },
+            {
+                "round": 15,
+                "type": "start_round"
+            },
+            {
+                "round": 16,
+                "type": "upgrade",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "path_index": 0,
+                "cost": 270
+            },
+            {
+                "round": 16,
+                "type": "start_round"
+            },
+            {
+                "round": 17,
+                "type": "start_round"
+            },
+            {
+                "round": 18,
+                "type": "place",
+                "monkey_id": 7,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    886,
+                    507
+                ],
+                "cost": 210
+            },
+            {
+                "round": 18,
+                "type": "upgrade",
+                "monkey_id": 6,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    435,
+                    520
+                ],
+                "path_index": 1,
+                "cost": 210
+            },
+            {
+                "round": 18,
+                "type": "start_round"
+            },
+            {
+                "round": 19,
+                "type": "start_round"
+            },
+            {
+                "round": 20,
+                "type": "place",
+                "monkey_id": 8,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    680,
+                    532
+                ],
+                "cost": 510
+            },
+            {
+                "round": 20,
+                "type": "start_round"
+            },
+            {
+                "round": 21,
+                "type": "upgrade",
+                "monkey_id": 7,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    886,
+                    507
+                ],
+                "path_index": 2,
+                "cost": 255
+            },
+            {
+                "round": 21,
+                "type": "start_round"
+            },
+            {
+                "round": 22,
+                "type": "place",
+                "monkey_id": 9,
+                "tower_type": "dart_monkey",
+                "position": [
+                    565,
+                    110
+                ],
+                "cost": 170
+            },
+            {
+                "round": 22,
+                "type": "place",
+                "monkey_id": 10,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    404,
+                    267
+                ],
+                "cost": 210
+            },
+            {
+                "round": 22,
+                "type": "start_round"
+            },
+            {
+                "round": 23,
+                "type": "start_round"
+            },
+            {
+                "round": 24,
+                "type": "start_round"
+            },
+            {
+                "round": 25,
+                "type": "place",
+                "monkey_id": 11,
+                "tower_type": "monkey_ace",
+                "position": [
+                    195,
+                    800
+                ],
+                "cost": 680
+            },
+            {
+                "round": 25,
+                "type": "upgrade",
+                "monkey_id": 9,
+                "tower_type": "dart_monkey",
+                "position": [
+                    565,
+                    110
+                ],
+                "path_index": 2,
+                "cost": 75
+            },
+            {
+                "round": 25,
+                "type": "start_round"
+            },
+            {
+                "round": 26,
+                "type": "upgrade",
+                "monkey_id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1450,
+                    494
+                ],
+                "path_index": 2,
+                "cost": 255
+            },
+            {
+                "round": 26,
+                "type": "start_round"
+            },
+            {
+                "round": 27,
+                "type": "upgrade",
+                "monkey_id": 7,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    886,
+                    507
+                ],
+                "path_index": 2,
+                "cost": 255
+            },
+            {
+                "round": 27,
+                "type": "place",
+                "monkey_id": 12,
+                "tower_type": "dart_monkey",
+                "position": [
+                    726,
+                    694
+                ],
+                "cost": 170
+            },
+            {
+                "round": 27,
+                "type": "start_round"
+            },
+            {
+                "round": 28,
+                "type": "upgrade",
+                "monkey_id": 3,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    979,
+                    372
+                ],
+                "path_index": 2,
+                "cost": 185
+            },
+            {
+                "round": 28,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    1413,
+                    685
+                ],
+                "path_index": 1,
+                "cost": 295
+            },
+            {
+                "round": 28,
+                "type": "place",
+                "monkey_id": 13,
+                "tower_type": "dart_monkey",
+                "position": [
+                    453,
+                    350
+                ],
+                "cost": 170
+            },
+            {
+                "round": 28,
+                "type": "start_round"
+            },
+            {
+                "round": 29,
+                "type": "upgrade",
+                "monkey_id": 10,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    404,
+                    267
+                ],
+                "path_index": 2,
+                "cost": 255
+            },
+            {
+                "round": 29,
+                "type": "upgrade",
+                "monkey_id": 12,
+                "tower_type": "dart_monkey",
+                "position": [
+                    726,
+                    694
+                ],
+                "path_index": 2,
+                "cost": 75
+            },
+            {
+                "round": 29,
+                "type": "start_round"
+            },
+            {
+                "round": 30,
+                "type": "start_round"
+            },
+            {
+                "round": 31,
+                "type": "place",
+                "monkey_id": 14,
+                "tower_type": "dart_monkey",
+                "position": [
+                    859,
+                    687
+                ],
+                "cost": 170
+            },
+            {
+                "round": 31,
+                "type": "start_round"
+            },
+            {
+                "round": 32,
+                "type": "place",
+                "monkey_id": 15,
+                "tower_type": "ice_monkey",
+                "position": [
+                    1356,
+                    808
+                ],
+                "cost": 340
+            },
+            {
+                "round": 32,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    1413,
+                    685
+                ],
+                "path_index": 1,
+                "cost": 765
+            },
+            {
+                "round": 32,
+                "type": "upgrade",
+                "monkey_id": 7,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    886,
+                    507
+                ],
+                "path_index": 0,
+                "cost": 150
+            },
+            {
+                "round": 32,
+                "type": "place",
+                "monkey_id": 16,
+                "tower_type": "tack_shooter",
+                "position": [
+                    1252,
+                    1038
+                ],
+                "cost": 220
+            },
+            {
+                "round": 32,
+                "type": "upgrade",
+                "monkey_id": 9,
+                "tower_type": "dart_monkey",
+                "position": [
+                    565,
+                    110
+                ],
+                "path_index": 0,
+                "cost": 120
+            },
+            {
+                "round": 32,
+                "type": "upgrade",
+                "monkey_id": 14,
+                "tower_type": "dart_monkey",
+                "position": [
+                    859,
+                    687
+                ],
+                "path_index": 2,
+                "cost": 75
+            },
+            {
+                "round": 32,
+                "type": "start_round"
+            },
+            {
+                "round": 33,
+                "type": "place",
+                "monkey_id": 17,
+                "tower_type": "glue_gunner",
+                "position": [
+                    960,
+                    526
+                ],
+                "cost": 190
+            },
+            {
+                "round": 33,
+                "type": "start_round"
+            },
+            {
+                "round": 34,
+                "type": "start_round"
+            },
+            {
+                "round": 35,
+                "type": "start_round"
+            },
+            {
+                "round": 36,
+                "type": "upgrade",
+                "monkey_id": 6,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    435,
+                    520
+                ],
+                "path_index": 1,
+                "cost": 295
+            },
+            {
+                "round": 36,
+                "type": "place",
+                "monkey_id": 18,
+                "tower_type": "boomerang_monkey",
+                "position": [
+                    1536,
+                    269
+                ],
+                "cost": 270
+            },
+            {
+                "round": 36,
+                "type": "place",
+                "monkey_id": 19,
+                "tower_type": "monkey_village",
+                "position": [
+                    850,
+                    860
+                ],
+                "cost": 1020
+            },
+            {
+                "round": 36,
+                "type": "upgrade",
+                "monkey_id": 8,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    680,
+                    532
+                ],
+                "path_index": 0,
+                "cost": 255
+            },
+            {
+                "round": 36,
+                "type": "upgrade",
+                "monkey_id": 5,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1015,
+                    227
+                ],
+                "path_index": 1,
+                "cost": 160
+            },
+            {
+                "round": 36,
+                "type": "upgrade",
+                "monkey_id": 11,
+                "tower_type": "monkey_ace",
+                "position": [
+                    195,
+                    800
+                ],
+                "path_index": 0,
+                "cost": 380
+            },
+            {
+                "round": 36,
+                "type": "place",
+                "monkey_id": 20,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    1463,
+                    811
+                ],
+                "cost": 510
+            },
+            {
+                "round": 36,
+                "type": "start_round"
+            },
+            {
+                "round": 37,
+                "type": "start_round"
+            },
+            {
+                "round": 38,
+                "type": "start_round"
+            },
+            {
+                "round": 39,
+                "type": "place",
+                "monkey_id": 21,
+                "tower_type": "sniper_monkey",
+                "position": [
+                    1169,
+                    168
+                ],
+                "cost": 300
+            },
+            {
+                "round": 39,
+                "type": "upgrade",
+                "monkey_id": 8,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    680,
+                    532
+                ],
+                "path_index": 1,
+                "cost": 340
+            },
+            {
+                "round": 39,
+                "type": "place",
+                "monkey_id": 22,
+                "tower_type": "super_monkey",
+                "position": [
+                    1026,
+                    103
+                ],
+                "cost": 2125
+            },
+            {
+                "round": 39,
+                "type": "place",
+                "monkey_id": 23,
+                "tower_type": "spike_factory",
+                "position": [
+                    135,
+                    119
+                ],
+                "cost": 850
+            },
+            {
+                "round": 39,
+                "type": "place",
+                "monkey_id": 24,
+                "tower_type": "alchemist",
+                "position": [
+                    1402,
+                    898
+                ],
+                "cost": 470
+            },
+            {
+                "round": 39,
+                "type": "place",
+                "monkey_id": 25,
+                "tower_type": "bomb_shooter",
+                "position": [
+                    1344,
+                    229
+                ],
+                "cost": 320
+            },
+            {
+                "round": 39,
+                "type": "start_round"
+            }
+        ],
+        "final_monkeys": [
+            {
+                "id": 1,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1450,
+                    494
+                ],
+                "upgrades": [
+                    1,
+                    0,
+                    2
+                ],
+                "total_spent": 870
+            },
+            {
+                "id": 2,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    1413,
+                    685
+                ],
+                "upgrades": [
+                    0,
+                    3,
+                    0
+                ],
+                "total_spent": 1570
+            },
+            {
+                "id": 3,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    979,
+                    372
+                ],
+                "upgrades": [
+                    0,
+                    1,
+                    2
+                ],
+                "total_spent": 1075
+            },
+            {
+                "id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1057,
+                    311
+                ],
+                "upgrades": [
+                    3,
+                    2,
+                    0
+                ],
+                "total_spent": 975
+            },
+            {
+                "id": 5,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1015,
+                    227
+                ],
+                "upgrades": [
+                    0,
+                    2,
+                    1
+                ],
+                "total_spent": 490
+            },
+            {
+                "id": 6,
+                "tower_type": "engineer_monkey",
+                "position": [
+                    435,
+                    520
+                ],
+                "upgrades": [
+                    0,
+                    2,
+                    0
+                ],
+                "total_spent": 805
+            },
+            {
+                "id": 7,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    886,
+                    507
+                ],
+                "upgrades": [
+                    1,
+                    0,
+                    2
+                ],
+                "total_spent": 870
+            },
+            {
+                "id": 8,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    680,
+                    532
+                ],
+                "upgrades": [
+                    1,
+                    1,
+                    0
+                ],
+                "total_spent": 1105
+            },
+            {
+                "id": 9,
+                "tower_type": "dart_monkey",
+                "position": [
+                    565,
+                    110
+                ],
+                "upgrades": [
+                    1,
+                    0,
+                    1
+                ],
+                "total_spent": 365
+            },
+            {
+                "id": 10,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    404,
+                    267
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    1
+                ],
+                "total_spent": 465
+            },
+            {
+                "id": 11,
+                "tower_type": "monkey_ace",
+                "position": [
+                    195,
+                    800
+                ],
+                "upgrades": [
+                    1,
+                    0,
+                    0
+                ],
+                "total_spent": 1060
+            },
+            {
+                "id": 12,
+                "tower_type": "dart_monkey",
+                "position": [
+                    726,
+                    694
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    1
+                ],
+                "total_spent": 245
+            },
+            {
+                "id": 13,
+                "tower_type": "dart_monkey",
+                "position": [
+                    453,
+                    350
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 170
+            },
+            {
+                "id": 14,
+                "tower_type": "dart_monkey",
+                "position": [
+                    859,
+                    687
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    1
+                ],
+                "total_spent": 245
+            },
+            {
+                "id": 15,
+                "tower_type": "ice_monkey",
+                "position": [
+                    1356,
+                    808
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 340
+            },
+            {
+                "id": 16,
+                "tower_type": "tack_shooter",
+                "position": [
+                    1252,
+                    1038
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 220
+            },
+            {
+                "id": 17,
+                "tower_type": "glue_gunner",
+                "position": [
+                    960,
+                    526
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 190
+            },
+            {
+                "id": 18,
+                "tower_type": "boomerang_monkey",
+                "position": [
+                    1536,
+                    269
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 270
+            },
+            {
+                "id": 19,
+                "tower_type": "monkey_village",
+                "position": [
+                    850,
+                    860
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 1020
+            },
+            {
+                "id": 20,
+                "tower_type": "mortar_monkey",
+                "position": [
+                    1463,
+                    811
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 510
+            },
+            {
+                "id": 21,
+                "tower_type": "sniper_monkey",
+                "position": [
+                    1169,
+                    168
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 300
+            },
+            {
+                "id": 22,
+                "tower_type": "super_monkey",
+                "position": [
+                    1026,
+                    103
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 2125
+            },
+            {
+                "id": 23,
+                "tower_type": "spike_factory",
+                "position": [
+                    135,
+                    119
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 850
+            },
+            {
+                "id": 24,
+                "tower_type": "alchemist",
+                "position": [
+                    1402,
+                    898
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 470
+            },
+            {
+                "id": 25,
+                "tower_type": "bomb_shooter",
+                "position": [
+                    1344,
+                    229
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 320
+            }
+        ],
+        "source": "random",
+        "generation": 0
+    },
+    {
+        "episode": 13,
+        "outcome": "killed",
+        "final_round": 15,
+        "final_lives": 26,
+        "difficulty": "easy",
+        "monkeys_placed": 10,
+        "build_log": [
+            {
+                "round": 1,
+                "type": "place",
+                "monkey_id": 1,
+                "tower_type": "alchemist",
+                "position": [
+                    529,
+                    201
+                ],
+                "cost": 470
+            },
+            {
+                "round": 1,
+                "type": "place",
+                "monkey_id": 2,
+                "tower_type": "dart_monkey",
+                "position": [
+                    729,
+                    729
+                ],
+                "cost": 170
+            },
+            {
+                "round": 1,
+                "type": "start_round"
+            },
+            {
+                "round": 2,
+                "type": "start_round"
+            },
+            {
+                "round": 3,
+                "type": "place",
+                "monkey_id": 3,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1520,
+                    337
+                ],
+                "cost": 210
+            },
+            {
+                "round": 3,
+                "type": "start_round"
+            },
+            {
+                "round": 4,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "dart_monkey",
+                "position": [
+                    729,
+                    729
+                ],
+                "path_index": 2,
+                "cost": 75
+            },
+            {
+                "round": 4,
+                "type": "start_round"
+            },
+            {
+                "round": 5,
+                "type": "place",
+                "monkey_id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    588,
+                    414
+                ],
+                "cost": 170
+            },
+            {
+                "round": 5,
+                "type": "start_round"
+            },
+            {
+                "round": 6,
+                "type": "start_round"
+            },
+            {
+                "round": 7,
+                "type": "start_round"
+            },
+            {
+                "round": 8,
+                "type": "start_round"
+            },
+            {
+                "round": 9,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "dart_monkey",
+                "position": [
+                    729,
+                    729
+                ],
+                "path_index": 0,
+                "cost": 120
+            },
+            {
+                "round": 9,
+                "type": "place",
+                "monkey_id": 5,
+                "tower_type": "ninja_monkey",
+                "position": [
+                    1433,
+                    842
+                ],
+                "cost": 340
+            },
+            {
+                "round": 9,
+                "type": "start_round"
+            },
+            {
+                "round": 10,
+                "type": "place",
+                "monkey_id": 6,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1253,
+                    282
+                ],
+                "cost": 170
+            },
+            {
+                "round": 10,
+                "type": "start_round"
+            },
+            {
+                "round": 11,
+                "type": "place",
+                "monkey_id": 7,
+                "tower_type": "dart_monkey",
+                "position": [
+                    251,
+                    417
+                ],
+                "cost": 170
+            },
+            {
+                "round": 11,
+                "type": "start_round"
+            },
+            {
+                "round": 12,
+                "type": "upgrade",
+                "monkey_id": 2,
+                "tower_type": "dart_monkey",
+                "position": [
+                    729,
+                    729
+                ],
+                "path_index": 2,
+                "cost": 170
+            },
+            {
+                "round": 12,
+                "type": "place",
+                "monkey_id": 8,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1395,
+                    456
+                ],
+                "cost": 170
+            },
+            {
+                "round": 12,
+                "type": "start_round"
+            },
+            {
+                "round": 13,
+                "type": "place",
+                "monkey_id": 9,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1095,
+                    153
+                ],
+                "cost": 210
+            },
+            {
+                "round": 13,
+                "type": "start_round"
+            },
+            {
+                "round": 14,
+                "type": "place",
+                "monkey_id": 10,
+                "tower_type": "dart_monkey",
+                "position": [
+                    172,
+                    522
+                ],
+                "cost": 170
+            },
+            {
+                "round": 14,
+                "type": "start_round"
+            },
+            {
+                "round": 15,
+                "type": "upgrade",
+                "monkey_id": 7,
+                "tower_type": "dart_monkey",
+                "position": [
+                    251,
+                    417
+                ],
+                "path_index": 1,
+                "cost": 85
+            }
+        ],
+        "final_monkeys": [
+            {
+                "id": 1,
+                "tower_type": "alchemist",
+                "position": [
+                    529,
+                    201
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 470
+            },
+            {
+                "id": 2,
+                "tower_type": "dart_monkey",
+                "position": [
+                    729,
+                    729
+                ],
+                "upgrades": [
+                    1,
+                    0,
+                    2
+                ],
+                "total_spent": 535
+            },
+            {
+                "id": 3,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1520,
+                    337
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 210
+            },
+            {
+                "id": 4,
+                "tower_type": "dart_monkey",
+                "position": [
+                    588,
+                    414
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 170
+            },
+            {
+                "id": 5,
+                "tower_type": "ninja_monkey",
+                "position": [
+                    1433,
+                    842
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 340
+            },
+            {
+                "id": 6,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1253,
+                    282
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 170
+            },
+            {
+                "id": 7,
+                "tower_type": "dart_monkey",
+                "position": [
+                    251,
+                    417
+                ],
+                "upgrades": [
+                    0,
+                    1,
+                    0
+                ],
+                "total_spent": 255
+            },
+            {
+                "id": 8,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1395,
+                    456
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 170
+            },
+            {
+                "id": 9,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1095,
+                    153
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 210
+            },
+            {
+                "id": 10,
+                "tower_type": "dart_monkey",
+                "position": [
+                    172,
+                    522
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 170
+            }
+        ],
+        "source": "random",
+        "generation": 0
+    },
+    {
+        "episode": 5,
+        "outcome": "killed",
+        "final_round": 7,
+        "final_lives": 59,
+        "difficulty": "hard",
+        "monkeys_placed": 4,
+        "source": "random",
+        "generation": 0,
+        "build_log": [
+            {
+                "round": 3,
+                "type": "place",
+                "monkey_id": 1,
+                "tower_type": "tack_shooter",
+                "position": [
+                    1316,
+                    783
+                ],
+                "cost": 280
+            },
+            {
+                "round": 3,
+                "type": "place",
+                "monkey_id": 2,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1301,
+                    891
+                ],
+                "cost": 270
+            },
+            {
+                "round": 3,
+                "type": "start_round"
+            },
+            {
+                "round": 4,
+                "type": "place",
+                "monkey_id": 3,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1085,
+                    1000
+                ],
+                "cost": 215
+            },
+            {
+                "round": 4,
+                "type": "start_round"
+            },
+            {
+                "round": 5,
+                "type": "start_round"
+            },
+            {
+                "round": 6,
+                "type": "place",
+                "monkey_id": 4,
+                "tower_type": "glue_gunner",
+                "position": [
+                    1203,
+                    839
+                ],
+                "cost": 245
+            },
+            {
+                "round": 6,
+                "type": "start_round"
+            }
+        ],
+        "final_monkeys": [
+            {
+                "id": 1,
+                "tower_type": "tack_shooter",
+                "position": [
+                    1316,
+                    783
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 280
+            },
+            {
+                "id": 2,
+                "tower_type": "wizard_monkey",
+                "position": [
+                    1301,
+                    891
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 270
+            },
+            {
+                "id": 3,
+                "tower_type": "dart_monkey",
+                "position": [
+                    1085,
+                    1000
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 215
+            },
+            {
+                "id": 4,
+                "tower_type": "glue_gunner",
+                "position": [
+                    1203,
+                    839
+                ],
+                "upgrades": [
+                    0,
+                    0,
+                    0
+                ],
+                "total_spent": 245
+            }
+        ]
+    }
+]

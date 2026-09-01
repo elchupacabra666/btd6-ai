@@ -149,8 +149,9 @@ def getTextFromImage(image, debug=False):
         save_debug_image("14_tesseract_input", ocrReadyImage)
 
     raw_text = pytesseract.image_to_string(ocrReadyImage, config='--psm 7 -c tessedit_char_whitelist=0123456789$/')
-    if debug:
-        print(f"Raw text: {raw_text!r}")
+#    if debug:
+
+    print(f"Raw text: {raw_text!r}")
     text = raw_text.split("/")[0].replace("\n", "").replace("+", "").replace("$", "")
     return text, imageCandidate
 

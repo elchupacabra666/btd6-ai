@@ -3,14 +3,14 @@
 # path. Update as you unlock more upgrades in-game — this is NOT a
 # universal BTD6 rule, just your current account progress.
 MAX_UPGRADE_TIER = {
-    "monkey_sub": 4, "monkey_ace": 3, "heli_pilot": 3, "mortar_monkey": 3,
-    "super_monkey": 3, "druid": 2, "monkey_village": 2, "engineer_monkey": 3,
-    "banana_farm": 0, "beast_handler": 0, "desperado": 0,
-    "dartling_gunner": 0, "mermonkey": 0,
+    "monkey_sub": 4, "monkey_ace": 4, "heli_pilot": 4, "mortar_monkey": 4,
+    "super_monkey": 4, "druid": 4, "monkey_village": 4, "engineer_monkey": 4,
+    "banana_farm": 4, "beast_handler": 4, "desperado": 4,
+    "dartling_gunner": 4, "mermonkey": 4,
 
-    "alchemist": 3, "boomerang_monkey": 3, "bomb_shooter": 4, "tack_shooter": 3,
-    "ice_monkey": 2, "glue_gunner": 3, "sniper_monkey": 4, "monkey_buccaneer": 3,
-    "wizard_monkey": 3, "ninja_monkey": 3, "spike_factory": 3,
+    "alchemist": 4, "boomerang_monkey": 4, "bomb_shooter": 4, "tack_shooter": 4,
+    "ice_monkey": 4, "glue_gunner": 4, "sniper_monkey": 4, "monkey_buccaneer": 4,
+    "wizard_monkey": 4, "ninja_monkey": 4, "spike_factory": 4,
 
     "dart_monkey": 4,
 }

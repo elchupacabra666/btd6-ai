@@ -27,7 +27,7 @@ class GameController:
             frame = capture.grab_screen()
             x1, y1, x2, y2 = region
             crop = frame[y1:y2, x1:x2]
-            text, _ = getTextFromImage(crop, debug=False)
+            text, _ = getTextFromImage(crop, debug=True)
             try:
                 return int(text.strip())
             except ValueError:

@@ -3,7 +3,6 @@
 no random building at all -- for checking replay fidelity before wiring up
 mutation. Usage: python replay_run.py [episode_num]
 (defaults to the best recorded episode if episode_num is omitted)."""
-import json
 import sys
 from time import sleep
 
@@ -12,24 +11,8 @@ from game_controller import GameController
 from agent import ReplayThenRandomAgent
 from env import BTD6Env
 from killswitch import KillSwitch
-
-RESULTS_FILE = "learning_memory.json"
-
-
-def load_episode(filename=RESULTS_FILE, episode_num=None):
-    with open(filename, "r") as file:
-        episodes = json.load(file)
-
-    if not episodes:
-        raise ValueError(f"{filename} has no recorded episodes")
-
-    if episode_num is not None:
-        matches = [e for e in episodes if e["episode"] == episode_num]
-        if not matches:
-            raise ValueError(f"No episode #{episode_num} found in {filename}")
-        return matches[0]
-
-    return max(episodes, key=lambda e: (e["outcome"] == "victory", e["final_round"], e["final_lives"]))
+from episode_log import (build_episode_summary, load_results, save_results,
+                          next_episode_num, load_episode, RESULTS_FILE)
 
 
 def main():
@@ -56,8 +39,18 @@ def main():
     env = BTD6Env(state, controller, agent, round_poll_interval=0.5, killswitch=kill)
 
     final_state = env.run_episode()
-    print(f"Replay ended. Outcome: {env.last_outcome}, "
+    outcome = env.last_outcome
+    print(f"Replay ended. Outcome: {outcome}, "
           f"final round: {final_state.current_round}, lives: {final_state.lives}")
+
+    all_results = load_results()
+    new_episode_num = next_episode_num(all_results)
+    summary = build_episode_summary(new_episode_num, final_state, outcome, difficulty,
+                                     source="replay", replay_of=episode["episode"])
+    all_results.append(summary)
+    save_results(all_results)
+    print(f"Logged as episode {new_episode_num} (replay of episode {episode['episode']}) "
+          f"in {RESULTS_FILE}")
 
 
 if __name__ == "__main__":

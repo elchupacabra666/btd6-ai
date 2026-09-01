@@ -1,32 +1,11 @@
 # main.py
-import json
-
 from game_state import GameState
 from game_controller import GameController
 from agent import RandomAgent
 from env import BTD6Env
 from time import sleep
 from killswitch import KillSwitch
-
-RESULTS_FILE = "learning_memory.json"
-
-
-def build_episode_summary(episode_num, state, outcome, difficulty):
-    return {
-        "episode": episode_num,
-        "outcome": outcome,
-        "final_round": state.current_round,
-        "final_lives": state.lives,
-        "difficulty": difficulty,
-        "monkeys_placed": len(state.placed_monkeys),
-        "build_log": state.build_log,
-        "final_monkeys": [m.to_dict() for m in state.placed_monkeys],
-    }
-
-
-def save_results(results, filename=RESULTS_FILE):
-    with open(filename, "w") as file:
-        json.dump(results, file, indent=4)
+from episode_log import build_episode_summary, save_results, RESULTS_FILE
 
 
 def main():
@@ -35,13 +14,17 @@ def main():
     DIFFICULTY = input("Enter difficulty (easy/medium/hard/impoppable): ").strip().lower()
     assert DIFFICULTY in ("easy", "medium", "hard", "impoppable")
 
+    runs_input = input("Enter number of runs to play (leave blank for unlimited): ").strip()
+    MAX_EPISODES = int(runs_input) if runs_input else None
+    assert MAX_EPISODES is None or MAX_EPISODES > 0
+
     kill = KillSwitch(hotkey="ctrl+shift+q")
     episode_results = []
     episode_num = 0
 
     sleep(3)
 
-    while not kill.is_triggered():
+    while not kill.is_triggered() and (MAX_EPISODES is None or episode_num < MAX_EPISODES):
         episode_num += 1
         print(f"\n=== Starting episode {episode_num} ===")
 
@@ -50,7 +33,7 @@ def main():
         starting_round = controller.read_round()
 
         state = GameState(starting_money, starting_lives, starting_round, DIFFICULTY)
-        agent = RandomAgent(stop_probability=0.5, upgrade_probability=0.4)
+        agent = RandomAgent(stop_probability=0.5, upgrade_probability=0.3)
         env = BTD6Env(state, controller, agent, round_poll_interval=0.5, killswitch=kill)
 
         final_state = env.run_episode()

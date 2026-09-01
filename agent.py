@@ -102,8 +102,20 @@ class ReplayThenRandomAgent:
         self.fallback_agent = fallback_agent or RandomAgent()
         self._index = 0
         self._exhausted = False  # True once we've passed cutoff_round -> random forever after
+        self._start_checked = False
 
     def choose_action(self, state):
+        if not self._start_checked:
+            self._start_checked = True
+            if self.build_log:
+                expected_round = self.build_log[0]["round"]
+                assert state.current_round == expected_round, (
+                    f"ReplayThenRandomAgent: game is at round {state.current_round} but "
+                    f"build_log starts at round {expected_round} -- events would never "
+                    f"match and replay would silently do nothing but start rounds. "
+                    f"Restart the game at round {expected_round} before replaying."
+                )
+
         if not self._exhausted and state.current_round > self.cutoff_round:
             self._exhausted = True
 
